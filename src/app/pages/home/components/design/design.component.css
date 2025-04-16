@@ -71,9 +71,15 @@
   padding: 3rem 0 2rem;
 }
 
-.subsection-colors-item.one { grid-area: one; }
-.subsection-colors-item.two { grid-area: two; }
-.subsection-colors-item.three { grid-area: three; }
+.subsection-colors-item.one {
+  grid-area: one;
+}
+.subsection-colors-item.two {
+  grid-area: two;
+}
+.subsection-colors-item.three {
+  grid-area: three;
+}
 
 /* ---------------------------------------------------------------
     Colornav
@@ -135,4 +141,42 @@
 
 .colornav-item.current .colornav-label {
   display: block;
+}
+
+@media (max-width: 734px) {
+  section {
+    width: 60%;
+  }
+
+  .section-design__media-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-design__subtitle {
+    font-size: 2.5rem;
+  }
+
+  .subsection-size__screen-container {
+    height: 350px;
+    margin: 3.5rem 0 1rem;
+  }
+
+
+  .subsection-size__screen-text {
+    font-size: 2rem;
+  }
+
+  .subsection-size__screen-text span {
+    font-size: 1.25rem;
+  }
+
+  .subsection-colors {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .subsection-colors-item.one {
+    display: none;
+  }
 }
