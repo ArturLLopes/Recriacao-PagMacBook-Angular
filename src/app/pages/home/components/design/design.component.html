@@ -39,38 +39,45 @@
 
     <div class="subsection-colors">
       <div class="subsection-colors-item one">
-        <img id="imageSide" src="assets/img/colors/design_side_skyblue.jpg" alt="Design Side">
+        <img [src]="getImageSrc('side')" alt="Design Side">
       </div>
 
       <div class="subsection-colors-item two">
-        <img id="imageMagsafe" src="assets/img/colors/design_magsafe_skyblue.jpg" alt="Design Magsafe">
+        <img [src]="getImageSrc('magsafe')" alt="Design Magsafe">
       </div>
 
       <div class="subsection-colors-item three">
-        <img id="imageTop" src="assets/img/colors/design_top_skyblue.jpg" alt="Design Top">
+        <img [src]="getImageSrc('top')" alt="Design Top">
 
         <fieldset class="colornav">
           <ul class="colornav-items">
-            <li class="colornav-item current" data-color="skyblue">
-              <span class="colornav-label">Azul-céu</span>
-            </li>
-            <li class="colornav-item" data-color="silver">
-              <span class="colornav-label">Prateado</span>
-            </li>
-            <li class="colornav-item" data-color="starlight">
-              <span class="colornav-label">Estelar</span>
-            </li>
-            <li class="colornav-item" data-color="midnight">
-              <span class="colornav-label">Meia-noite</span>
+            <!-- troca de cor  -->
+            <!-- Explicação do funcionamento
+              *ngFor="let color of colors"
+Essa é uma diretiva estrutural Angular que cria um <li> para cada item do array colors.
+[class.current]="selectedColor === color.value"
+Isso é o que dá o destaque na bolinha selecionada (aquele contorno que você já tem no CSS).
+
+[ngStyle]="{ 'background-color': color.hex }"
+Isso garante que a bolinha tenha a cor exata relacionada à opção de cor do produto.
+
+(click)="onColorChange(color.value)"
+Esse método você define no seu .ts para atualizar a cor selecionada e trocar as imagens.
+               -->
+            <li *ngFor="let color of colors" class="colornav-item" [class.current]="selectedColor === color.value"
+              [ngStyle]="{ 'background-color': color.hex }" (click)="onColorChange(color.value)">
+              <span class="colornav-label">{{ color.label }}</span>
             </li>
           </ul>
         </fieldset>
       </div>
     </div>
 
+
     <p>
       <em>Nova cor. Tudo azul.</em>
-      São quatro cores divinas para você escolher. Uma delas é a nova azul-céu. E todos os modelos de MacBook Air vêm com
+      São quatro cores divinas para você escolher. Uma delas é a nova azul-céu. E todos os modelos de MacBook Air vêm
+      com
       um cabo MagSafe na mesma cor.
     </p>
   </section>
