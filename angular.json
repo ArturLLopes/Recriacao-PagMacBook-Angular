@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/Recriacao-PagMacBook-Angular/",
             "outputPath": "dist/macbook-pag",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -87,6 +88,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
