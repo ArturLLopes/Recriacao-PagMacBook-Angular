@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  background: url("/img/sections/design_sizes_endframe__ckfqlo8f44eq_large_2x.jpg");
+  background: url("/assets/img/sections/design_sizes_endframe__ckfqlo8f44eq_large_2x.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -10,9 +10,17 @@ footer {
   background: var(--color-bg-light);
 }
 
+footer p{
+  display: flex;
+  justify-content: center;
+}
+
 footer p, footer span {
   font-size: 0.9rem;
   color: var(--color-text-gray);
+}
+footer img{
+  gap: 1rem;
 }
 
 footer span {
