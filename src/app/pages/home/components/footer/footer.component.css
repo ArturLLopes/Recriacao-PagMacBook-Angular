@@ -1,0 +1,21 @@
+/* ---------------------------------------------------------------
+    Footer
+----------------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem 1rem;
+  margin-top: 4rem;
+  background: var(--color-bg-light);
+}
+
+footer p, footer span {
+  font-size: 0.9rem;
+  color: var(--color-text-gray);
+}
+
+footer span {
+  border-top: 1px solid var(--color-text-gray);
+  padding-top: 1rem;
+}

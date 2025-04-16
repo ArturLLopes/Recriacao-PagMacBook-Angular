@@ -1,0 +1,70 @@
+/* ---------------------------------------------------------------
+    Main Section
+----------------------------------------------------------------*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+  background: linear-gradient(to bottom, var(--color-blue-light-gradient-start), var(--color-blue-light-gradient-end), var(--color-bg-white));
+}
+
+.main__title,
+.main__copy-text {
+  font-size: 2rem;
+}
+
+.main__title {
+  line-height: 1.125;
+  letter-spacing: 0.004em;
+  color: var(--color-text-dark);
+}
+
+.main__subtitle {
+  font-size: 4rem;
+  letter-spacing: -0.05em;
+}
+
+.main__media {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2.5rem 0;
+}
+
+.main__media-image {
+  width: 60%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.main__copy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main__copy-text {
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.main__pricing {
+  font-weight: 700;
+  margin-top: 1.5rem;
+  color: var(--color-text-dark);
+}
+
+.main__availability,
+.main__language {
+  font-weight: 400;
+  color: var(--color-text-dark);
+}
+
+.main__description {
+  width: 60%;
+  margin-top: 4rem;
+}
