@@ -8,9 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './design.component.css'
 })
 export class DesignComponent {
-
   selectedColor: string = 'skyblue';
 
+<<<<<<< Updated upstream
+  selectedColor: string = 'skyblue';
+
+=======
+>>>>>>> Stashed changes
   colors = [
     { value: 'skyblue', label: 'Azul-céu', hex: '#c8d8e0' },
     { value: 'silver', label: 'Prateado', hex: '#e3e4e6' },
@@ -18,7 +22,10 @@ export class DesignComponent {
     { value: 'midnight', label: 'Meia-noite', hex: '#2e3642' }
   ];
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   onColorChange(color: string): void {
     this.selectedColor = color;
   }

@@ -36,7 +36,6 @@
         <sup><a href="#" aria-label="Nota de rodapé 3">3</a></sup>.
       </p>
     </div>
-
     <div class="subsection-colors">
       <div class="subsection-colors-item one">
         <img [src]="getImageSrc('side')" alt="Design Side">
@@ -51,6 +50,7 @@
 
         <fieldset class="colornav">
           <ul class="colornav-items">
+<<<<<<< Updated upstream
             <!-- troca de cor  -->
             <!-- Explicação do funcionamento
               *ngFor="let color of colors"
@@ -64,10 +64,29 @@ Isso garante que a bolinha tenha a cor exata relacionada à opção de cor do pr
 (click)="onColorChange(color.value)"
 Esse método você define no seu .ts para atualizar a cor selecionada e trocar as imagens.
                -->
+=======
+
+
+            <!-- Explicação  -->
+            <!--
+    -*ngFor="let color of colors"
+    Essa é uma diretiva estrutural Angular que cria um <li> para cada item do array colors.
+    -class="colornav-item"
+    Essa classe é responsável por formatar a bolinha como um círculo, com tamanho, borda, etc.
+    -[class.current]="selectedColor === color.value"
+    Isso é o que dá o destaque na bolinha selecionada (aquele contorno que você já tem no CSS).
+    -[ngStyle]="{ 'background-color': color.hex }"
+    Isso garante que a bolinha tenha a cor exata relacionada à opção de cor do produto.
+    -(click)="onColorChange(color.value)"
+    Esse método você define no seu .ts para atualizar a cor selecionada e trocar as imagens.
+   -->
+
+>>>>>>> Stashed changes
             <li *ngFor="let color of colors" class="colornav-item" [class.current]="selectedColor === color.value"
               [ngStyle]="{ 'background-color': color.hex }" (click)="onColorChange(color.value)">
               <span class="colornav-label">{{ color.label }}</span>
             </li>
+
           </ul>
         </fieldset>
       </div>
