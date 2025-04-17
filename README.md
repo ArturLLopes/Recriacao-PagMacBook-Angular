@@ -1,59 +1,63 @@
-# MacbookPag
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+# 💻 Recriação da Página do MacBook com Angular
 
-## Development server
+Este projeto é uma recriação da landing page do MacBook apresentada durante a **Star Week** da [Digital Innovation One (DIO)](https://www.dio.me/). A versão original utilizava tecnologias como HTML, CSS e JavaScript puro. Nesta versão, o projeto foi adaptado para o framework **Angular**, explorando seus recursos modernos e práticas recomendadas.
 
-To start a local development server, run:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-ng serve
-```
+- [Angular CLI](https://angular.io/cli) v19.2.5
+- TypeScript
+- HTML5
+- CSS3
+- [Vercel](https://vercel.com/) para deploy
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🧠 Sobre o Projeto
 
-## Code scaffolding
+O objetivo principal deste projeto é aplicar os conceitos aprendidos durante a Star Week da DIO, utilizando o Angular para criar uma versão moderna e escalável da página do MacBook. A adaptação para o Angular permite uma melhor organização do código, reutilização de componentes e facilita futuras manutenções e expansões do projeto.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📸 Preview
 
-```bash
-ng generate component component-name
-```
+![Preview da Página do MacBook](https://github.com/user-attachments/assets/9469e5ed-4519-4dd4-a415-62615cea2bf1)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🌐 Acesse o Projeto Online
 
-```bash
-ng generate --help
-```
+Você pode visualizar o projeto em funcionamento através do seguinte link:
 
-## Building
+🔗 [recriacao-pagmacbook-angular.vercel.app](https://recriacao-pagmacbook-angular.vercel.app)
 
-To build the project run:
+## 📁 Como Executar Localmente
 
-```bash
-ng build
-```
+1. Clone o repositório:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```bash
+   git clone https://github.com/ArturLLopes/Recriacao-PagMacBook-Angular.git
+   ```
 
-## Running unit tests
+2. Navegue até o diretório do projeto:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+   ```bash
+   cd Recriacao-PagMacBook-Angular
+   ```
 
-```bash
-ng test
-```
+3. Instale as dependências:
 
-## Running end-to-end tests
+   ```bash
+   npm install
+   ```
 
-For end-to-end (e2e) testing, run:
+4. Inicie o servidor de desenvolvimento:
 
-```bash
-ng e2e
-```
+   ```bash
+   ng serve
+   ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+5. Abra o navegador e acesse:
 
-## Additional Resources
+   ```
+   http://localhost:4200/
+   ```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+---
+
+Sinta-se à vontade para contribuir com melhorias ou sugestões!
